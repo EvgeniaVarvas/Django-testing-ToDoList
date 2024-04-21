@@ -1,0 +1,11 @@
+{% extends 'base/main.html' %}
+
+{% block content %}
+
+<a href="{% url 'task_update' task.id %}">Update Task</a>
+
+<h1>{{ task.title }}</h1>
+<p>{{ task.description }}</p>
+
+
+{% endblock %}
